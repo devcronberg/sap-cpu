@@ -6,6 +6,9 @@ Selve SAP arkitekturen kommer oprindeligt fra Albert Malvino, der brugte den i "
 
 Simuleringen benytter Logosim der både er vedlagt her men også kan findes på [http://www.cburch.com/logisim/](http://www.cburch.com/logisim/).
 
+God fornøjelse
+Michell Cronberg
+
 ## Version 1 - simple kontrollinjer
 
 Dette er den manuelle version af en CPU. Den består af 
