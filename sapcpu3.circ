@@ -212,19 +212,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(330,360)" to="(330,420)"/>
     <wire from="(550,260)" to="(560,260)"/>
     <wire from="(590,260)" to="(600,260)"/>
-    <comp lib="3" loc="(340,170)" name="Adder"/>
-    <comp lib="0" loc="(630,200)" name="Pin">
-      <a name="output" val="true"/>
-      <a name="width" val="8"/>
-      <a name="label" val="MAR"/>
-      <a name="labelloc" val="north"/>
+    <comp lib="6" loc="(320,145)" name="Text">
+      <a name="text" val="E (ALU)"/>
     </comp>
-    <comp lib="1" loc="(790,280)" name="Controlled Buffer">
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="6" loc="(49,38)" name="Text">
-      <a name="text" val="Michell Cronberg"/>
-      <a name="font" val="SansSerif italic 10"/>
+    <comp lib="6" loc="(486,356)" name="Text">
+      <a name="text" val="RO"/>
     </comp>
     <comp lib="0" loc="(460,50)" name="Splitter">
       <a name="facing" val="south"/>
@@ -238,61 +230,32 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit6" val="0"/>
       <a name="bit7" val="0"/>
     </comp>
-    <comp lib="1" loc="(380,170)" name="Controlled Buffer">
-      <a name="width" val="8"/>
+    <comp lib="4" loc="(760,280)" name="RAM"/>
+    <comp lib="6" loc="(399,355)" name="Text">
+      <a name="text" val="IO"/>
     </comp>
     <comp lib="6" loc="(457,355)" name="Text">
       <a name="text" val="MI"/>
-    </comp>
-    <comp lib="4" loc="(760,280)" name="RAM"/>
-    <comp lib="0" loc="(280,110)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="8"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="4" loc="(760,440)" name="ROM">
-      <a name="addrWidth" val="16"/>
-      <a name="dataWidth" val="16"/>
-      <a name="contents">addr/data: 16 16
-a700 500 8080 6000 a00
-</a>
-    </comp>
-    <comp loc="(530,150)" name="Register"/>
-    <comp loc="(250,260)" name="Register">
-      <a name="label" val="B"/>
-    </comp>
-    <comp lib="6" loc="(364,355)" name="Text">
-      <a name="text" val="EO"/>
-    </comp>
-    <comp lib="6" loc="(333,355)" name="Text">
-      <a name="text" val="BO"/>
-    </comp>
-    <comp lib="0" loc="(550,160)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="8"/>
-      <a name="label" val="(O) Output"/>
-      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="6" loc="(12,25)" name="Text">
       <a name="text" val="SAP-1 inspireret 8 bit computer - version 3"/>
       <a name="font" val="SansSerif bold 12"/>
       <a name="halign" val="left"/>
     </comp>
-    <comp lib="6" loc="(320,145)" name="Text">
-      <a name="text" val="E (ALU)"/>
+    <comp lib="6" loc="(306,356)" name="Text">
+      <a name="text" val="BI"/>
     </comp>
-    <comp lib="6" loc="(274,355)" name="Text">
-      <a name="text" val="AO"/>
+    <comp lib="3" loc="(340,170)" name="Adder"/>
+    <comp lib="6" loc="(49,38)" name="Text">
+      <a name="text" val="Michell Cronberg"/>
+      <a name="font" val="SansSerif italic 10"/>
     </comp>
-    <comp lib="6" loc="(428,355)" name="Text">
-      <a name="text" val="OI"/>
-    </comp>
-    <comp lib="0" loc="(460,440)" name="Splitter">
-      <a name="facing" val="north"/>
-      <a name="fanout" val="16"/>
-      <a name="incoming" val="16"/>
+    <comp lib="4" loc="(760,440)" name="ROM">
+      <a name="addrWidth" val="16"/>
+      <a name="dataWidth" val="16"/>
+      <a name="contents">addr/data: 16 16
+0
+</a>
     </comp>
     <comp lib="0" loc="(550,120)" name="Pin">
       <a name="facing" val="west"/>
@@ -301,15 +264,25 @@ a700 500 8080 6000 a00
       <a name="label" val="(I) Input"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp loc="(590,250)" name="Register">
-      <a name="label" val="(M)AR"/>
+    <comp lib="0" loc="(280,110)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="labelloc" val="east"/>
     </comp>
     <comp lib="4" loc="(430,470)" name="Counter">
       <a name="width" val="16"/>
       <a name="max" val="0xffff"/>
     </comp>
-    <comp lib="6" loc="(468,43)" name="Text">
-      <a name="text" val="8 bit databus"/>
+    <comp lib="0" loc="(550,160)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="label" val="(O) Output"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="1" loc="(790,280)" name="Controlled Buffer">
+      <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(360,140)" name="Pin">
       <a name="facing" val="west"/>
@@ -317,8 +290,64 @@ a700 500 8080 6000 a00
       <a name="width" val="8"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="6" loc="(486,356)" name="Text">
-      <a name="text" val="RO"/>
+    <comp lib="0" loc="(470,280)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(630,200)" name="Pin">
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="label" val="MAR"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="6" loc="(274,355)" name="Text">
+      <a name="text" val="AO"/>
+    </comp>
+    <comp loc="(250,100)" name="Register">
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="6" loc="(333,355)" name="Text">
+      <a name="text" val="BO"/>
+    </comp>
+    <comp lib="1" loc="(500,120)" name="Controlled Buffer">
+      <a name="facing" val="west"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="6" loc="(245,355)" name="Text">
+      <a name="text" val="AI"/>
+    </comp>
+    <comp lib="0" loc="(340,470)" name="Constant">
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(170,90)" name="Clock">
+      <a name="facing" val="south"/>
+      <a name="label" val="CLK"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp loc="(590,250)" name="Register">
+      <a name="label" val="(M)AR"/>
+    </comp>
+    <comp loc="(250,260)" name="Register">
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="6" loc="(468,43)" name="Text">
+      <a name="text" val="8 bit databus"/>
+    </comp>
+    <comp lib="6" loc="(364,355)" name="Text">
+      <a name="text" val="EO"/>
+    </comp>
+    <comp lib="1" loc="(380,170)" name="Controlled Buffer">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="6" loc="(713,207)" name="Text">
+      <a name="text" val="(R)AM"/>
+    </comp>
+    <comp lib="0" loc="(460,440)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
     </comp>
     <comp lib="0" loc="(280,270)" name="Pin">
       <a name="facing" val="west"/>
@@ -326,38 +355,9 @@ a700 500 8080 6000 a00
       <a name="width" val="8"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="6" loc="(713,207)" name="Text">
-      <a name="text" val="(R)AM"/>
-    </comp>
-    <comp lib="0" loc="(470,280)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="output" val="true"/>
-      <a name="width" val="8"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="6" loc="(399,355)" name="Text">
-      <a name="text" val="IO"/>
-    </comp>
-    <comp lib="0" loc="(170,90)" name="Clock">
-      <a name="facing" val="south"/>
-      <a name="label" val="CLK"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(340,470)" name="Constant">
-      <a name="width" val="16"/>
-    </comp>
-    <comp lib="1" loc="(500,120)" name="Controlled Buffer">
-      <a name="facing" val="west"/>
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="6" loc="(306,356)" name="Text">
-      <a name="text" val="BI"/>
-    </comp>
-    <comp loc="(250,100)" name="Register">
-      <a name="label" val="A"/>
-    </comp>
-    <comp lib="6" loc="(245,355)" name="Text">
-      <a name="text" val="AI"/>
+    <comp loc="(530,150)" name="Register"/>
+    <comp lib="6" loc="(428,355)" name="Text">
+      <a name="text" val="OI"/>
     </comp>
   </circuit>
   <circuit name="Register">
@@ -384,22 +384,28 @@ a700 500 8080 6000 a00
     <wire from="(80,210)" to="(80,270)"/>
     <wire from="(300,140)" to="(300,230)"/>
     <wire from="(230,250)" to="(230,310)"/>
-    <comp lib="0" loc="(240,150)" name="Constant"/>
+    <comp lib="1" loc="(360,140)" name="Controlled Buffer">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(170,140)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="D"/>
+    </comp>
+    <comp lib="0" loc="(290,40)" name="Pin">
+      <a name="facing" val="north"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="RO"/>
+    </comp>
+    <comp lib="0" loc="(260,160)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="value" val="0x0"/>
+    </comp>
     <comp lib="0" loc="(310,230)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="8"/>
       <a name="label" val="V"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="1" loc="(360,140)" name="Controlled Buffer">
-      <a name="width" val="8"/>
-    </comp>
-    <comp lib="0" loc="(380,140)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="8"/>
-      <a name="label" val="Q"/>
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(200,310)" name="Pin">
@@ -411,23 +417,17 @@ a700 500 8080 6000 a00
       <a name="tristate" val="false"/>
       <a name="label" val="CLK"/>
     </comp>
-    <comp lib="0" loc="(290,40)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="RO"/>
-    </comp>
     <comp lib="1" loc="(210,140)" name="Controlled Buffer">
       <a name="width" val="8"/>
     </comp>
-    <comp lib="4" loc="(270,140)" name="Register"/>
-    <comp lib="0" loc="(260,160)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(170,140)" name="Pin">
+    <comp lib="0" loc="(380,140)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
       <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="D"/>
+      <a name="label" val="Q"/>
+      <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="4" loc="(270,140)" name="Register"/>
+    <comp lib="0" loc="(240,150)" name="Constant"/>
   </circuit>
 </project>
