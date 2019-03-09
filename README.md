@@ -82,8 +82,8 @@ PC er koblet direkte på klokken og kan derfor aflæse en binær instruktion i h
 ### Eksempel: Find et tal i RAM (adresse 0) og læg det sammen med sig selv
 
 - Placer tal i RAM på adresse 0 
+- 0 i input (ikke nødvendig ved reset)
 - Palcer disse instruktioner (HEX) i ROM
-  - (0 i input) - ikke nødvendig fordi input = 0 ved reset
   - 1010 0111 0 = A700 RESET ALT (AI+BI+IO+OI+MI)
   - 0000 0101 0 = 0500 (IO+MI) 
   - 1000 0000 1 = 8080 (AI+RO)
