@@ -22,9 +22,9 @@ Dette er den manuelle version af en CPU. Den består af
 
 ### Kontrollinjer
 
-| A Reg In | A Reg Out | B reg In | B reg Out | ALU Out | Input Out | Output In | Mem Addr In | RAM Out |
-| -------- | --------- | -------- | --------- | ------- | --------- | --------- | ----------- | ------- |
-| AI       | AO        | BI       | BO        | EO      | IO        | OI        | MI          | RO      |
+| A Reg In | A Reg Out | B reg In | B reg Out | ALU Out | Input Out | Output In |
+| -------- | --------- | -------- | --------- | ------- | --------- | --------- |
+| AI       | AO        | BI       | BO        | EO      | IO        | OI        |
 
 ### Eksempel: Tal fra input og læg det sammen med sig selv
 
@@ -37,9 +37,18 @@ Samtlige kontrollinjer skal påvirkes manuelt (brug ctrl + T til at få klokken 
 
 ## Version 2
 
+Denne version er udvidet med RAM og et MAR (memory address register) register. Det resulterer et et par nye kontrollinjer - MI (MAR in) og RO (RAM out). Ideen er, at MAR indeholder en adresse i RAM som så kan hentes med RO.
+
 ![](Billeder/sap-cpu-v2.png)
 
-Find et tal i RAM (adresse 0) og læg det sammen med sig selv
+### Kontrollinjer
+
+| A Reg In | A Reg Out | B reg In | B reg Out | ALU Out | Input Out | Output In | Mem Addr In | RAM Out |
+| -------- | --------- | -------- | --------- | ------- | --------- | --------- | ----------- | ------- |
+| AI       | AO        | BI       | BO        | EO      | IO        | OI        | MI          | RO      |
+
+
+### Eksempel: Find et tal i RAM (adresse 0) og læg det sammen med sig selv
 
 - Tal i RAM på adresse 0 
 - 0 i input (0 ved reset)
