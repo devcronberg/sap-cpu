@@ -20,7 +20,7 @@ Dette er den manuelle version af en CPU. Den består af
 
 ![](Billeder/sap-cpu-v1.png)
 
-### Kontrollinjer - tilføjelse af RAM
+### Kontrollinjer
 
 | A Reg In | A Reg Out | B reg In | B reg Out | ALU Out | Input Out | Output In |
 | -------- | --------- | -------- | --------- | ------- | --------- | --------- |
@@ -35,13 +35,13 @@ Samtlige kontrollinjer skal påvirkes manuelt (brug ctrl + T til at få klokken 
 - Input Out (IO) + B In (BI)
 - ALU Out (EO) + Output In (OI)
 
-## Version 2
+## Version 2 - tilføjelse af RAM
 
 Denne version er udvidet med RAM og et MAR (memory address register) register. Det resulterer et et par nye kontrollinjer - MI (MAR in) og RO (RAM out). Ideen er, at MAR indeholder en adresse i RAM som så kan hentes med RO.
 
 ![](Billeder/sap-cpu-v2.png)
 
-### Kontrollinjer - Mikrokode i stedet for manuel påvirkning af kontrollinjer
+### Kontrollinjer 
 
 | A Reg In | A Reg Out | B reg In | B reg Out | ALU Out | Input Out | Output In | Mem Addr In | RAM Out |
 | -------- | --------- | -------- | --------- | ------- | --------- | --------- | ----------- | ------- |
@@ -57,7 +57,7 @@ Denne version er udvidet med RAM og et MAR (memory address register) register. D
 - A Out + B in
 - ALU Out + Output In
 
-## Version 3
+## Version 3 - Mikrokode i stedet for manuel påvirkning af kontrollinjer
 
 ### Binære instruktioner
 
