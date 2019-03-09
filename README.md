@@ -57,7 +57,16 @@ Denne version er udvidet med RAM og et MAR (memory address register) register. D
 - A Out + B in
 - ALU Out + Output In
 
-## Version 3 - Mikrokode i stedet for manuel påvirkning af kontrollinjer
+## Version 3 - Mikrokode i ROM i stedet for manuel påvirkning af kontrollinjer
+
+Denne version er udvidet med 
+
+- ROM (16 bit)
+- Program Counter (8 bit)
+
+![](Billeder/sap-cpu-v3.png)
+
+PC er koblet direkte på klokken og kan derfor aflæse en binær instruktion i hver cyklus. De binære instuktioner er blot en binær repræsentation af kontrollinjerne.
 
 ### Binære instruktioner
 
@@ -66,11 +75,11 @@ Denne version er udvidet med RAM og et MAR (memory address register) register. D
 | AI       | AO        | BI       | BO        | EO      | IO        | OI        | MI          | RO      |
 | 1        | 2         | 3        | 4         | 5       | 6         | 7         | 8           | 9       |
 
-Find et tal i RAM (adresse 0) og læg det sammen med sig selv
+### Eksempel: Find et tal i RAM (adresse 0) og læg det sammen med sig selv
 
 - Placer tal i RAM på adresse 0 
 - (0 i input) - ikke nødvendig fordi input = 0 ved reset
-- 1010 0111 0 = A700 RESET ALT
+- 1010 0111 0 = A700 RESET ALT (AI+BI+IO+OI+MI)
 - 0000 0101 0 = 0500 (IO+MI) 
 - 1000 0000 1 = 8080 (AI+RO)
 - 0110 0000 0 = 6000 (AO+BI)

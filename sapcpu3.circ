@@ -276,7 +276,7 @@ a700 500 8080 6000 a00
       <a name="labelloc" val="north"/>
     </comp>
     <comp lib="6" loc="(12,25)" name="Text">
-      <a name="text" val="SAP-1 inspireret 8 bit computer - version 2"/>
+      <a name="text" val="SAP-1 inspireret 8 bit computer - version 3"/>
       <a name="font" val="SansSerif bold 12"/>
       <a name="halign" val="left"/>
     </comp>
