@@ -6,7 +6,7 @@ Selve SAP arkitekturen kommer oprindeligt fra Albert Malvino, der brugte den i "
 
 Simuleringen benytter Logosim der både er vedlagt her men også kan findes på [http://www.cburch.com/logisim/](http://www.cburch.com/logisim/).
 
-## Version 1
+## Version 1 - simple kontrollinjer
 
 Dette er den manuelle version af en CPU. Den består af 
 
@@ -20,7 +20,7 @@ Dette er den manuelle version af en CPU. Den består af
 
 ![](Billeder/sap-cpu-v1.png)
 
-### Kontrollinjer
+### Kontrollinjer - tilføjelse af RAM
 
 | A Reg In | A Reg Out | B reg In | B reg Out | ALU Out | Input Out | Output In |
 | -------- | --------- | -------- | --------- | ------- | --------- | --------- |
@@ -41,7 +41,7 @@ Denne version er udvidet med RAM og et MAR (memory address register) register. D
 
 ![](Billeder/sap-cpu-v2.png)
 
-### Kontrollinjer
+### Kontrollinjer - Mikrokode i stedet for manuel påvirkning af kontrollinjer
 
 | A Reg In | A Reg Out | B reg In | B reg Out | ALU Out | Input Out | Output In | Mem Addr In | RAM Out |
 | -------- | --------- | -------- | --------- | ------- | --------- | --------- | ----------- | ------- |
