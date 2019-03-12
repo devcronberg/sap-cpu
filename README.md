@@ -101,8 +101,7 @@ Denne version er udvidet med
 ### Binære instruktioner
 
 | A Reg In | A Reg Out | B reg In | B reg Out | ALU Out | Input Out | Output In | Mem Addr In | RAM Out | PC E | PC In | PC Out | Inst. In | Inst. Out | HALT | RAM In | 
-|-------- | --------- | -------- | --------- | ------- | --------- | --------- | ----------- | ------- | ------- | ------- | ------- | ------- |
-
+|-------- | --------- | -------- | --------- | ------- | --------- | --------- | ----------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
 | AI       | AO        | BI       | BO        | EO      | KO (NY)   | OI        | MI          | RO      | PE | PI | PO | II | IO | HL  | RI |
 | 1        | 2         | 3        | 4         | 5       | 6         | 7         | 8           | 9       | 10 | 11 | 12 | 13 | 14 | 15 |
 
@@ -122,10 +121,10 @@ Denne version er udvidet med
 
 ### Eksempel: Tre-tabel
 
-LIA	3 (63)
-STA	F (5F)
-ADD	F (2F)
-OUTA  (30)
-JMP	3 (73)
+- LIA	3 (63)
+- STA	F (5F)
+- ADD	F (2F)
+- OUTA  (30)
+- JMP	3 (73)
 
 Må se at få lavet nogle videoer der viser brugen af den ;)
