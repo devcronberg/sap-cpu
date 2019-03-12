@@ -109,15 +109,15 @@ Denne version er udvidet med
 
 |Instruktion | HEX | BIN | Forklaring | 
 | ----- | ----- | ----- | ----- |
-| LDA	| 1	| 0001	Load fra RAM til A| 
-| ADD	| 2	| 0010	Læg tal fra RAM til A| 
-| OUTA	| 3	| 0011	Send A til Output| 
-| HLT	| 4	| 0100	Halt| 
-| STA	| 5	| 0101	Save A til RAM| 
-| LIA	| 6	| 0110	Literal til A| 
-| JMP	| 7	| 0111	Jump til adresse| 
-| MOVAB	| 8	| 1000	Kopi A til B| 
-| NOP	| 9	| 1001	No operation| 
+| LDA	| 1	| 0001 | Load fra RAM til A| 
+| ADD	| 2	| 0010	| Læg tal fra RAM til A| 
+| OUTA	| 3	| 0011	| Send A til Output| 
+| HLT	| 4	| 0100	| Halt| 
+| STA	| 5	| 0101	| Save A til RAM| 
+| LIA	| 6	| 0110	| Literal til A| 
+| JMP	| 7	| 0111	| Jump til adresse| 
+| MOVAB	| 8	| 1000	| Kopi A til B| 
+| NOP	| 9	| 1001	| No operation| 
 
 ### Eksempel: Tre-tabel
 
