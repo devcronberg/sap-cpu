@@ -83,7 +83,7 @@ PC er koblet direkte på klokken og kan derfor aflæse en binær instruktion i h
 
 - Placer tal i RAM på adresse 0 
 - 0 i input (ikke nødvendig ved reset)
-- Palcer disse instruktioner (HEX) i ROM
+- Placer disse instruktioner (HEX) i ROM
   - 1010 0111 0 = A700 RESET ALT (AI+BI+IO+OI+MI)
   - 0000 0101 0 = 0500 (IO+MI) 
   - 1000 0000 1 = 8080 (AI+RO)
@@ -95,7 +95,7 @@ PC er koblet direkte på klokken og kan derfor aflæse en binær instruktion i h
 Denne version er udvidet med
 
 - Instruktionsregister
-- ROM med mikrokode
+- ROM til mikrokode (pversættelse af assembler)
 - Mikro instruktions tæller
 
 ### Binære instruktioner
@@ -103,7 +103,7 @@ Denne version er udvidet med
 | A Reg In | A Reg Out | B reg In | B reg Out | ALU Out | Input Out | Output In | Mem Addr In | RAM Out | PC E | PC In | PC Out | Inst. In | Inst. Out | HALT | RAM In | 
 |-------- | --------- | -------- | --------- | ------- | --------- | --------- | ----------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
 | AI       | AO        | BI       | BO        | EO      | KO (NY)   | OI        | MI          | RO      | PE | PI | PO | II | IO | HL  | RI |
-| 1        | 2         | 3        | 4         | 5       | 6         | 7         | 8           | 9       | 10 | 11 | 12 | 13 | 14 | 15 |
+| 1        | 2         | 3        | 4         | 5       | 6         | 7         | 8           | 9       | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
 
 ### Instruktionssæt
 
