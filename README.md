@@ -100,31 +100,36 @@ Denne version er udvidet med
 
 ### Binære instruktioner
 
-| A Reg In | A Reg Out | B reg In | B reg Out | ALU Out | Input Out | Output In | Mem Addr In | RAM Out | PC E | PC In | PC Out | Inst. In | Inst. Out | HALT | RAM In | 
-|-------- | --------- | -------- | --------- | ------- | --------- | --------- | ----------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
-| AI       | AO        | BI       | BO        | EO      | KO (NY)   | OI        | MI          | RO      | PE | PI | PO | II | IO | HL  | RI |
-| 1        | 2         | 3        | 4         | 5       | 6         | 7         | 8           | 9       | 10 | 11 | 12 | 13 | 14 | 15 | 16 |
+| A Reg In | A Reg Out | B reg In | B reg Out | ALU Out | Input Out | Output In | Mem Addr In | RAM Out | PC E | PC In | PC Out | Inst. In | Inst. Out | HALT | RAM In |
+| -------- | --------- | -------- | --------- | ------- | --------- | --------- | ----------- | ------- | ---- | ----- | ------ | -------- | --------- | ---- | ------ |
+| AI       | AO        | BI       | BO        | EO      | KO (NY)   | OI        | MI          | RO      | PE   | PI    | PO     | II       | IO        | HL   | RI     |
+| 1        | 2         | 3        | 4         | 5       | 6         | 7         | 8           | 9       | 10   | 11    | 12     | 13       | 14        | 15   | 16     |
 
 ### Instruktionssæt
 
-|Instruktion | HEX | BIN | Forklaring | 
-| ----- | ----- | ----- | ----- |
-| LDA	| 1	| 0001 | Load fra RAM til A| 
-| ADD	| 2	| 0010	| Læg tal fra RAM til A| 
-| OUTA	| 3	| 0011	| Send A til Output| 
-| HLT	| 4	| 0100	| Halt| 
-| STA	| 5	| 0101	| Save A til RAM| 
-| LIA	| 6	| 0110	| Literal til A| 
-| JMP	| 7	| 0111	| Jump til adresse| 
-| MOVAB	| 8	| 1000	| Kopi A til B| 
-| NOP	| 9	| 1001	| No operation| 
+| Instruktion | HEX | BIN  | Forklaring            |
+| ----------- | --- | ---- | --------------------- |
+| LDA         | 1   | 0001 | Load fra RAM til A    |
+| ADD         | 2   | 0010 | Læg tal fra RAM til A |
+| OUTA        | 3   | 0011 | Send A til Output     |
+| HLT         | 4   | 0100 | Halt                  |
+| STA         | 5   | 0101 | Save A til RAM        |
+| LIA         | 6   | 0110 | Literal til A         |
+| JMP         | 7   | 0111 | Jump til adresse      |
+| MOVAB       | 8   | 1000 | Kopi A til B          |
+| NOP         | 9   | 1001 | No operation          |
 
 ### Eksempel: Tre-tabel
 
-- LIA	3 (63)
-- STA	F (5F)
-- ADD	F (2F)
-- OUTA  (30)
-- JMP	3 (73)
+Husk at loade instruktionsset til ROM
 
-Må se at få lavet nogle videoer der viser brugen af den ;)
+- LIA 0 (60) reset a
+- STA F (5F) reset RAM F
+- OUTA  (30) send a til out
+. LIA 3 (63) a = 3
+- ADD F (2F) læg ram f til a
+- STA F (5F) a til ram f
+- JMP	2 (72) goto 2
+
+
+
